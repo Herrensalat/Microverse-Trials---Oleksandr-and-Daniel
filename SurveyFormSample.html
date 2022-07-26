@@ -16,33 +16,35 @@ https://github.com/Herrensalat/Microverse-Trials---Oleksandr-and-Daniel.git -->
 
 <header class="head">
 <center>
-<h1>Survey Form sample</h1>
-<p class="thank_you">
+<h1 id="title">Survey Form (sample)</h1>
+<p  id="description" class="thank_you">
 Thank you for taking the time to help us improve the platform
 </p>
 </center>
 </header>
 
-<form>
+<!-- FORM start-->
+<form id="survey-form">
 <div class="form-main">
 <label id="name-label" for="name">Name</label>
-<input type="text" name="name" id="form-name" class="form-elements" placeholder="Enter your name" required="">
+<input type="text" name="name" id="name" class="form-elements" placeholder="Enter your name" required="">
 </div>
 
 <div class="form-main">
-<label id="form-email-label" for="email">Email</label>
-<input type="email" name="email" id="form-email" class="form-elements" placeholder="Enter your E-mail" required="">
+<label id="email-label" for="email">Email</label>
+<input type="email" name="email" id="email" class="form-elements" placeholder="Enter your E-mail" required="">
 </div>
 
 <div class="form-main">
-<label id="form-number-label" for="number">Age<span class="hint">(optional)</span></label>
-<input type="number" name="age" id="form-number" min="10" max="99" class="form-elements" placeholder="Age">
+<label id="number-label" for="number">Age<span class="hint">(optional)</span></label>
+<input type="number" name="age" id="number" min="10" max="99" class="form-elements" placeholder="Age">
 </div>
 
 <div class="form-main">
 <p>Which option best describes your current role?</p>
 
-<select name="form-role" class="form-elements" required="">
+<select 
+id="dropdown" name="form-role" class="form-elements" required="">
   <option disabled="" selected="" value="">Select current role</option>
   <option value="Student">Student</option>
   <option value="FTJ">Full Time Job</option>
@@ -94,11 +96,16 @@ What would you like to see improved?
 </div>
 
 <div class="form-main">
-<button id="form-submit" type="submit" class="submit-btn">Submit</button>
+<button id="submit" type="submit" class="submit-btn">Submit</button>
 </div>
       
 </form>
+<!-- FORM end-->
+
 </div>
 
 </BODY>
 </HTML>
+
+<!-- Microverse Trials collaboration: Oleksandr Lopatin & Daniel Kariuki
+https://github.com/Herrensalat/Microverse-Trials---Oleksandr-and-Daniel.git -->
