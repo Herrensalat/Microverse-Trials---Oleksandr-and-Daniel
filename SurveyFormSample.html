@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<!-- Microverse Trials collaboration: Oleksandr Lopatin & Daniel Kariuki
+https://github.com/Herrensalat/Microverse-Trials---Oleksandr-and-Daniel.git -->
+
+<HTML>
+<HEAD>
+<title>Survey Form sample</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="styles.css">
+</HEAD>
+
+<BODY>
+    
+<div class="main-container">
+
+<header class="head">
+<center>
+<h1>Survey Form sample</h1>
+<p class="thank_you">
+Thank you for taking the time to help us improve the platform
+</p>
+</center>
+</header>
+
+<form>
+<div class="form-main">
+<label id="name-label" for="name">Name</label>
+<input type="text" name="name" id="form-name" class="form-elements" placeholder="Enter your name" required="">
+</div>
+
+<div class="form-main">
+<label id="form-email-label" for="email">Email</label>
+<input type="email" name="email" id="form-email" class="form-elements" placeholder="Enter your E-mail" required="">
+</div>
+
+<div class="form-main">
+<label id="form-number-label" for="number">Age<span class="hint">(optional)</span></label>
+<input type="number" name="age" id="form-number" min="10" max="99" class="form-elements" placeholder="Age">
+</div>
+
+<div class="form-main">
+<p>Which option best describes your current role?</p>
+
+<select name="form-role" class="form-elements" required="">
+  <option disabled="" selected="" value="">Select current role</option>
+  <option value="Student">Student</option>
+  <option value="FTJ">Full Time Job</option>
+  <option value="FTL">Full Time Learner</option>
+  <option value="PNTS">Prefer not to say</option>
+  <option value="Other">Other</option>
+</select>
+</div>
+
+<div class="form-main">
+<p>Would you recommend freeCodeCamp to a friend?</p>
+<label><input name="form-recommend" value="definitely" class="input-radio" type="radio" checked="">Definitely</label>
+<label><input name="form-recommend" value="maybe" class="input-radio" type="radio">Maybe</label>
+<label><input name="form-recommend" value="not-sure" class="input-radio" type="radio">Not sure</label>
+</div>
+
+<div class="form-main">
+<p>What is your favorite feature of freeCodeCamp?</p>
+<select id="form-most-like" name="mostLike" class="form-elements" required="">
+  <option disabled="" selected="" value="">Select an option</option>
+  <option value="challenges">Challenges</option>
+  <option value="projects">Projects</option>
+  <option value="community">Community</option>
+  <option value="openSource">Open Source</option>
+</select>
+</div>
+
+<div class="form-main">
+<p>
+What would you like to see improved?
+<span class="hint">(Check all that apply)</span>
+</p>
+<label><input name="improve" value="front-end-projects" class="input-chbox" type="checkbox">Front-end Projects</label>
+<label><input name="improve" value="back-end-projects" class="input-chbox" type="checkbox">Back-end Projects</label>
+<label><input name="improve" value="data-visualization" class="input-chbox" type="checkbox">Data Visualization</label>
+<label><input name="improve" value="challenges" class="input-chbox" type="checkbox">Challenges</label>
+<label><input name="improve" value="open-source-community" class="input-chbox" type="checkbox">Open Source Community</label>
+<label><input name="improve" value="gitter-help-rooms" class="input-chbox" type="checkbox">Gitter help rooms</label>
+<label><input name="improve" value="videos" class="input-chbox" type="checkbox">Videos</label>
+<label><input name="improve" value="city-meetups" class="input-chbox" type="checkbox">City Meetups</label>
+<label><input name="improve" value="wiki" class="input-chbox" type="checkbox">Wiki</label>
+<label><input name="improve" value="forum" class="input-chbox" type="checkbox">Forum</label>
+<label><input name="improve" value="additional-courses" class="input-chbox" type="checkbox">Additional Courses</label>
+</div>
+
+<div class="form-main">
+<p>Any comments or suggestions?</p>
+<textarea id="form-comments" class="input-txtarea" name="comment" placeholder="Enter your comment here..."></textarea>
+</div>
+
+<div class="form-main">
+<button id="form-submit" type="submit" class="submit-btn">Submit</button>
+</div>
+      
+</form>
+</div>
+
+</BODY>
+</HTML>
